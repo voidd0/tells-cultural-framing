@@ -1,6 +1,6 @@
 # tells-cultural-framing
 
-> Per-language cultural framing files for [tells](https://tells.voiddo.com) — the forensic AI for what people don't say.
+> Per-language cultural framing files for [tells](https://tells.voiddo.com) — text-first analysis for what people leave unsaid.
 
 This repo holds the 12 per-language framing JSON files that adjust how tells
 analyses are produced for users in different cultural contexts. They are
@@ -39,8 +39,8 @@ prompt logic to suggest a change to `ru.json`.
 ```
 
 Each file is consumed at request time by the prompt-construction layer; the
-selected language's JSON is appended to the system prompt before the Gemini
-call. There is no inheritance — each file is self-contained.
+selected language's JSON is appended to the system prompt before the tells
+analysis run. There is no inheritance — each file is self-contained.
 
 ## Languages — Day 1 launch
 
